@@ -3,8 +3,11 @@ import styled from 'styled-components';
 import { fetchCharacters, charactersOptionApi } from './../utils/charactersApi';
 
 const Container = styled.ol`
+    padding: 0;
+    margin: 0;
     list-style: none;
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1280px;
@@ -15,7 +18,6 @@ const Button = styled.button`
 const CharacterCard = styled.li`
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 10px;
     padding: 10px;
     width: 200px;
     text-align: center;
